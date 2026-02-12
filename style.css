@@ -162,3 +162,8 @@ button {
   text-align: center;
   margin-top: 10px;
 }
+/* 📱 Mobile scroll & bounce disable while dragging */
+body {
+  overscroll-behavior: none;
+  touch-action: none;
+}
