@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Just Curious 💭</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="page2">
+
+  <div class="card">
+
+    <h2>If you feel like sharing…</h2>
+
+    <p>🌱 Something that makes you really happy?</p>
+    <textarea placeholder="You can write anything…"></textarea>
+
+    <p>🎶 A song that feels like you?</p>
+    <textarea placeholder="Only if you want 🙂"></textarea>
+
+    <p>✨ One thing people don’t know about you?</p>
+    <textarea placeholder="No pressure at all"></textarea>
+
+    <button id="copyBtn">Copy my answers</button>
+
+    <p class="hint">
+      You can paste this on WhatsApp or Instagram DM 💬
+    </p>
+
+    <small>
+      You don’t have to answer everything.<br>
+      Even one line is enough 💙
+    </small>
+
+  </div>
+
+  <script>
+    document.getElementById("copyBtn").addEventListener("click", () => {
+      const answers = Array.from(document.querySelectorAll("textarea"))
+        .map(t => t.value.trim())
+        .filter(text => text !== "")
+        .join("\n\n");
+
+      if (!answers) {
+        alert("You can write anything you feel like 🙂");
+        return;
+      }
+
+      navigator.clipboard.writeText(answers).then(() => {
+        alert("Copied 💙 You can send it if you want");
+      });
+    });
+  </script>
+
+</body>
+</html>

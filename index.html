@@ -1,38 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Birthday 💖</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday 💖</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- 🎶 Background music (starts on first click/touch via JS) -->
+<!-- 🔊 TAP TO START (mobile music fix) -->
+<div id="tapToStart">
+  <p>Tap anywhere to begin 🎧</p>
+</div>
+
+<!-- 🎶 Background music -->
 <audio id="bgMusic" loop>
   <source src="music/romantic.mp3" type="audio/mpeg">
 </audio>
-
-<!-- 📸 Polaroid photos -->
-<div class="paper">
-  <div class="photo" style="background-image: url('images/1.jpg')"></div>
-  <div class="caption">Happy Birthday 💕</div>
+ 
+ <!-- 👉 LAST IMAGE → PAGE 2 -->
+<div class="paper go-next" onclick="location.href='page2.html'">
+  <div class="photo" style="background-image:url('images/17.jpg')"></div>
+  <div class="caption">One more little thing… 💭</div>
 </div>
 
-<div class="paper">
-  <div class="photo" style="background-image: url('images/2.jpg')"></div>
-  <div class="caption">My favourite smile</div>
+<div class="paper"><div class="photo" style="background-image:url('images/16.jpg')"></div><div class="caption">Hope today feels calm and happy ✨</div></div>
+
+<div class="paper"><div class="photo" style="background-image:url('images/15.jpg')"></div><div class="caption">Moments feel nicer around you</div></div>
+
+<div class="paper"><div class="photo" style="background-image:url('images/14.jpg')"></div><div class="caption">The world needs more people like you</div></div>
+
+<div class="paper"><div class="photo" style="background-image:url('images/13.jpg')"></div><div class="caption">Another year, another smile 😊</div></div>
+
+<div class="paper"><div class="photo" style="background-image:url('images/12.jpg')"></div><div class="caption">Your kindness shows without trying</div></div>
+
+<div class="paper"><div class="photo" style="background-image:url('images/11.jpg')"></div><div class="caption">Wishing you a really good year ahead</div></div>
+
+<div class="paper"><div class="photo" style="background-image:url('images/10.jpg')"></div><div class="caption">Hope this year treats you well 🌱</div></div>
+
+<!-- 🎥 VIDEO -->
+<div class="paper video-paper">
+  <video class="video" src="videos/memory.mp4"></video>
+  <div class="caption">🫀❤️🫀</div>
 </div>
 
-<div class="paper">
-  <div class="photo" style="background-image: url('images/3.jpg')"></div>
-  <div class="caption">Always special</div>
-</div>
+<div class="paper"><div class="photo" style="background-image:url('images/9.jpg')"></div><div class="caption">Some people just feel easy to be around</div></div>
 
-<div class="paper">
-  <div class="photo" style="background-image: url('images/4.jpg')"></div>
-  <div class="caption">May all dreams come true 🎂</div>
-</div>
+<div class="paper"><div class="photo" style="background-image:url('images/8.jpg')"></div><div class="caption">Today’s a good reason to smile 🎂</div></div>
+
+<div class="paper"><div class="photo" style="background-image:url('images/7.jpg')"></div><div class="caption">You bring good energy with you</div></div>
+
+<div class="paper"><div class="photo" style="background-image:url('images/6.jpg')"></div><div class="caption">Hope today feels special in a simple way</div></div>
+
+<div class="paper"><div class="photo" style="background-image:url('images/5.jpg')"></div><div class="caption">Just stay the way you are</div></div>
+
+<div class="paper"><div class="photo" style="background-image:url('images/4.jpg')"></div><div class="caption">Simple moments matter most</div></div>
+
+<div class="paper"><div class="photo" style="background-image:url('images/3.jpg')"></div><div class="caption">This day is meant to be light & happy</div></div>
+
+<div class="paper"><div class="photo" style="background-image:url('images/2.jpg')"></div><div class="caption">Smiles suit you well 🙂</div></div>
+
+<div class="paper"><div class="photo" style="background-image:url('images/1.png')"></div><div class="caption">Happy Birthday 🎉</div></div>
 
 <script src="script.js"></script>
 </body>
